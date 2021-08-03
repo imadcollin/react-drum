@@ -1,18 +1,18 @@
-const data = [
+const samples = [
   {
     id: 1,
-    name: 'item1',
-    text: 'this is the item1'
+    title: 'sample1',
+    text: 'this is the sample1'
   },
   {
     id: 2,
-    name: 'item2',
-    text: 'this is item 2'
+    title: 'sample2',
+    text: 'this is sample2 2'
   },
   {
     id: 3,
-    name: 'item3',
-    text: 'this it item 3'
+    title: 'sample3',
+    text: 'this it sample 3'
   },
 ];
-export default data;
+export default samples;
