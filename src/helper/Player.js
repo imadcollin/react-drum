@@ -7,11 +7,23 @@ class Player {
   }
 
   play(title) {
-    var that = this;
-    this.sound = new Sound(`${title}.mp3`, Sound.MAIN_BUNDLE, () => that.sound.play());
+    this.sound = new Sound(`${title}.mp3`, Sound.MAIN_BUNDLE, (error) => {
+      if (error) {
+        console.log('something went wrong');
+        return;
+      }
+      this.sound.play((success) => {
+        if (success) {
+          console.log("played succesfully")
+        } else {
+          console.log("failed to play...!")
+        };
+      })
+    })
   };
-  pause() {
-    this.sound.pause();
+  stop() {
+    this.sound.stop();
+    this.sound.release();
   }
 }
 
