@@ -2,8 +2,10 @@ import {StyleSheet} from 'react-native';
 
 const AppStyles = StyleSheet.create({
   container: {
-    flex: 1,
-    backgroundColor: 'yellow',
+    display:"flex",
+    backgroundColor: 'green',
+    height: "100%",
+
   },
   view: {
     backgroundColor: 'red',
@@ -23,6 +25,13 @@ const AppStyles = StyleSheet.create({
   },
   highlight: {
     fontWeight: '700',
+  },
+  flatListStyle: {
+    display: 'flex',
+    flexWrap: 'wrap',
+    width: '100%',
+    flexDirection: 'column',
+    margin: '2%',
   },
 });
 
