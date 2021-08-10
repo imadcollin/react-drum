@@ -5,8 +5,8 @@ const HeaderStyle = StyleSheet.create({
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-    width: '100%',
-    height: '50%',
+    width: null,
+    height: '100%',
   },
   text: {
     color: '#000',
@@ -16,7 +16,8 @@ const HeaderStyle = StyleSheet.create({
   img: {
     width: '100%',
     height: '100%',
-    resizeMode: 'cover',
+    flex:1,
+    resizeMode:"contain",
     position: 'absolute',
   },
 });
