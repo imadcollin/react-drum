@@ -1,10 +1,12 @@
 import React from 'react';
-import {Button} from 'react-native';
+import {View, Button} from 'react-native';
 const PressButton = props => {
   return (
-    <Button
-      title={props.title}
-      onPress={() => props.player.play(props.title)}></Button>
+    <View style={{margin: 10}}>
+      <Button
+        title={props.title}
+        onPress={() => props.player.play(props.title)}></Button>
+    </View>
   );
 };
 export default PressButton;
