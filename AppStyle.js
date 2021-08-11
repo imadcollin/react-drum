@@ -2,13 +2,12 @@ import {StyleSheet} from 'react-native';
 
 const AppStyles = StyleSheet.create({
   container: {
-    display:"flex",
-    backgroundColor: 'green',
-    height: "100%",
-
+    display: 'flex',
+    height: '100%',
   },
   view: {
-    backgroundColor: 'red',
+    display: 'flex',
+    flexWrap: 'wrap',
   },
   sectionContainer: {
     marginTop: 32,
@@ -30,9 +29,8 @@ const AppStyles = StyleSheet.create({
     display: 'flex',
     flexWrap: 'wrap',
     width: '100%',
-    flexDirection: 'column',
-    margin: '2%',
   },
+  flatListContent: {display: 'flex', flexDirection: 'row', flexWrap: 'wrap'},
 });
 
 export default AppStyles;

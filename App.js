@@ -24,7 +24,7 @@ const App = () => {
         <ImageBackground
           source={require('./assets/images/1.jpg')}
           style={HeaderStyle.img}></ImageBackground>
-        <Text style={HeaderStyle.text}>Img </Text>
+        <Text style={HeaderStyle.text}>Loops </Text>
 
         <View style={AppStyles.view}>
           <View style={AppStyles.flatListStyle}>
@@ -33,6 +33,7 @@ const App = () => {
               numColumns={5}
               data={samples}
               renderItem={renderItem}
+              contentContainerStyle={AppStyles.flatListContent}
               keyExtractor={item => item.id}></FlatList>
           </View>
         </View>
